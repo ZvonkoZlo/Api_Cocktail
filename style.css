@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("pozadina1.jpg");
+    
+}
+
+header {
+    background-color: #7c7c7c;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#cocktail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cocktail-card {
+    opacity: 0.9;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(50% - 10px); /* Da bi se prikazala 2 recepta po redu */
+    background-color: rgb(188, 188, 188);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cocktail-card:hover {
+    transform: translateY(-5px);
+}
+
+.cocktail-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.buttons-container button:hover {
+    background-color: #555;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px; /* Smanjili smo padding */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px; /* Smanjili smo font-size */
+}
+
+.search-dropdown {
+    text-align: left;
+    position: relative;
+}
+
+.search-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-dropdown li {
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-dropdown li:hover {
+    background-color: #f4f4f4;
+}
+
+button#popular-cocktails-button,
+button#search-cocktail-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+button#popular-cocktails-button:hover,
+button#search-cocktail-button:hover {
+    background-color: #555;
+}
+
+.cocktail-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 reda po 3 koktela */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.cocktail-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+/* Stil za label element unutar klase ingredients-select */
+.ingredients-select label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Boja teksta */
+}
+
+/* Stil za select element unutar klase ingredients-select */
+.ingredients-select select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f4f4f4; /* Boja pozadine */
+    color: #333; /* Boja teksta */
+}
+
+/* Stil za opcije unutar select elementa */
+.ingredients-select select option {
+    font-size: 16px;
+    color: #333; /* Boja teksta opcija */
+}
+
+/* Stil za hover opcije unutar select elementa */
+.ingredients-select select option:hover {
+    background-color: #ccc; /* Boja pozadine hover opcije */
+}
